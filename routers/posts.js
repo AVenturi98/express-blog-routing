@@ -4,7 +4,8 @@ const posts = require('../data/posts');
 
 //index (get)
 router.get('/', (req, res) => {
-    res.send(`Lista dei post`)
+    console.log(`Lista dei post`)
+    res.json(posts)
 });
 
 //show (get)
